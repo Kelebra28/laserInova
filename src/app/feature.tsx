@@ -41,12 +41,12 @@ const FEATURES = [
 
 export function Features() {
   return (
-    <section className="py-28 px-4">
+    <section className="py-28 px-4 bg-black">
       <div className="container mx-auto mb-20 text-center">
-        <Typography color="blue-gray" className="mb-2 font-bold uppercase" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+        <Typography className="mb-2 font-bold uppercase !text-gray-200 " placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             Tu Taller de Corte Láser
         </Typography>
-        <Typography variant="h1" color="blue-gray" className="mb-4"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+        <Typography variant="h1" color="white" className="mb-4"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             Diversidad de Servicios para Tus Proyectos Láser
         </Typography>
         <Typography
