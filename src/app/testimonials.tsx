@@ -39,13 +39,12 @@ export function Testimonials() {
           <div className="mb-10 flex h-12 w-12 items-center justify-center rounded-lg bg-gray-900 text-white ">
             <UserIcon className="h-6 w-6" />
           </div>
-          <Typography variant="h2" color="white" className="mb-2">
+          <Typography variant="h2" color="white" className="mb-2" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           Nuestro Compromiso
           </Typography>
           <Typography
             variant="lead"
-            className="mb-10 max-w-3xl text-center !text-gray-600"
-          >
+            className="mb-10 max-w-3xl text-center !text-gray-600" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          >
             Nos dedicamos a brindar resultados excepcionales en corte y grabado láser, siempre trabajando para satisfacer las necesidades de nuestros clientes y construir relaciones sólidas.
           </Typography>
         </div>

@@ -41,24 +41,23 @@ export function Faqs() {
         <div className="mb-10 flex h-12 w-12 items-center justify-center rounded-lg bg-gray-900 text-white ">
           <QuestionMarkCircleIcon className="h-6 w-6" />
         </div>
-        <Typography variant="h2" color="blue-gray" className="mb-2">
+        <Typography variant="h2" color="blue-gray" className="mb-2" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
         Preguntas Frecuentes
         </Typography>
         <Typography
-          variant="lead"
-          className="mb-10 max-w-3xl text-center !text-gray-600"
-        >
+            variant="lead"
+            className="mb-10 max-w-3xl text-center !text-gray-600" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}        >
           Resolvemos las inquietudes más comunes sobre nuestros servicios de corte y grabado láser, asegurando que tengas toda la información necesaria para tomar decisiones informadas.
         </Typography>
       </div>
       <div className="grid gap-20 md:grid-cols-1 lg:grid-cols-3">
           {FAQS.map(({ title, desc }) => (
-            <Card key={title} shadow={false} color="transparent">
-              <Typography color="blue-gray" className="pb-6" variant="h4">
+            <Card key={title} shadow={false} color="transparent" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+              <Typography color="blue-gray" className="pb-6" variant="h4" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 {title}
               </Typography>
               <div className="pt-2">
-                <Typography className="font-normal !text-gray-500">
+                <Typography className="font-normal !text-gray-500" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                   {desc}
                 </Typography>
               </div>

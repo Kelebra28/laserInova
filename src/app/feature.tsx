@@ -43,16 +43,15 @@ export function Features() {
   return (
     <section className="py-28 px-4">
       <div className="container mx-auto mb-20 text-center">
-        <Typography color="blue-gray" className="mb-2 font-bold uppercase">
+        <Typography color="blue-gray" className="mb-2 font-bold uppercase" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             Tu Taller de Corte Láser
         </Typography>
-        <Typography variant="h1" color="blue-gray" className="mb-4">
+        <Typography variant="h1" color="blue-gray" className="mb-4"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             Diversidad de Servicios para Tus Proyectos Láser
         </Typography>
         <Typography
           variant="lead"
-          className="mx-auto w-full px-4 !text-gray-500 lg:w-11/12 lg:px-8 "
-        >
+          className="mx-auto w-full px-4 !text-gray-500 lg:w-11/12 lg:px-8 " placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}        >
           Nuestro taller de corte y grabado láser está disponible para ti. Ya sea que necesites realizar un proyecto rápido o tengas una idea en mente, estamos aquí para ayudarte en cualquier momento.
         </Typography>
       </div>

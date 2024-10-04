@@ -16,7 +16,9 @@ export function Footer() {
               variant="h5"
               color="white"
               className="mb-4"
-            >
+              placeholder={undefined} 
+              onPointerEnterCapture={undefined} 
+              onPointerLeaveCapture={undefined}            >
               Laser Inova
             </Typography>
             {/* <Typography color="white" className="mb-12 font-normal">
@@ -25,12 +27,12 @@ export function Footer() {
             <ul className="flex flex-wrap items-center justify-center md:justify-start">
             <div className="flex gap-2">
             <a target="blank"  href="https://www.facebook.com/profile.php?id=100093617932950">
-              <IconButton variant="text" color="white">
+              <IconButton variant="text" color="white" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 <i className="fa-brands fa-facebook text-2xl not-italic opacity-75"></i>
               </IconButton>
             </a>
             <a target="blank" href="https://www.instagram.com/laserinova23/">
-              <IconButton variant="text" color="white">
+              <IconButton variant="text" color="white" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 <i className="fa-brands fa-instagram text-2xl not-italic opacity-75"></i>
               </IconButton>
             </a>
@@ -41,8 +43,7 @@ export function Footer() {
         <div className="mt-16 flex flex-wrap items-center justify-center gap-y-4 gap-x-8 border-t border-gray-700 py-7 md:justify-between">
           <Typography
             color="white"
-            className="text-center font-normal opacity-75"
-          >
+            className="text-center font-normal opacity-75" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          >
             &copy; {CURRENT_YEAR} Made with{" "}
                     Laser Inova
           </Typography>
