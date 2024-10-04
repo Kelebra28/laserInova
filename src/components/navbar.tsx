@@ -74,7 +74,7 @@ export function Navbar() {
           as="a"
           href=""
           target="_blank"
-          variant="h4"
+          variant="h3"
           color={isScrolling ? "gray" : "white"} 
           placeholder={undefined} 
           onPointerEnterCapture={undefined} 
