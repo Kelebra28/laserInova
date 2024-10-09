@@ -16,8 +16,8 @@ export function Footer() {
               variant="h5"
               color="white"
               className="mb-4"
-              placeholder={undefined} 
-              onPointerEnterCapture={undefined} 
+              placeholder={undefined}
+              onPointerEnterCapture={undefined}
               onPointerLeaveCapture={undefined}            >
               Laser Inova
             </Typography>
@@ -25,18 +25,23 @@ export function Footer() {
               The reward for getting on the stage is fame.
             </Typography> */}
             <ul className="flex flex-wrap items-center justify-center md:justify-start">
-            <div className="flex gap-2">
-            <a target="blank"  href="https://www.facebook.com/profile.php?id=100093617932950">
-              <IconButton variant="text" color="white" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-                <i className="fa-brands fa-facebook text-2xl not-italic opacity-75"></i>
-              </IconButton>
-            </a>
-            <a target="blank" href="https://www.instagram.com/laserinova23/">
-              <IconButton variant="text" color="white" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-                <i className="fa-brands fa-instagram text-2xl not-italic opacity-75"></i>
-              </IconButton>
-            </a>
-          </div>
+              <div className="flex gap-2">
+              <a target="blank" href="mailto:informes@laserinova.com">
+                  <IconButton variant="text" color="white" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                    <i className="fa-solid fa-envelope text-2xl not-italic opacity-75"></i>
+                  </IconButton>
+                </a>
+                <a target="blank" href="https://www.facebook.com/profile.php?id=100093617932950">
+                  <IconButton variant="text" color="white" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                    <i className="fa-brands fa-facebook text-2xl not-italic opacity-75"></i>
+                  </IconButton>
+                </a>
+                <a target="blank" href="https://www.instagram.com/laserinova23/">
+                  <IconButton variant="text" color="white" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                    <i className="fa-brands fa-instagram text-2xl not-italic opacity-75"></i>
+                  </IconButton>
+                </a>
+              </div>
             </ul>
           </div>
         </div>
@@ -45,7 +50,7 @@ export function Footer() {
             color="white"
             className="text-center font-normal opacity-75" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          >
             &copy; {CURRENT_YEAR} Made with{" "}
-                    Laser Inova
+            Laser Inova
           </Typography>
         </div>
       </div>

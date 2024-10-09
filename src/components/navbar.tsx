@@ -20,9 +20,11 @@ function NavItem({ children, href }: NavItemProps) {
         href={href || "#"}
         target={href ? "_blank" : "_self"}
         variant="small"
-        className="font-medium" placeholder={undefined}
-        onPointerEnterCapture={undefined} 
-        onPointerLeaveCapture={undefined}      >
+        className="font-medium"
+        placeholder={undefined}
+        onPointerEnterCapture={undefined}
+        onPointerLeaveCapture={undefined}
+      >
         {children}
       </Typography>
     </li>
@@ -64,22 +66,22 @@ export function Navbar() {
       shadow={false}
       blurred={false}
       color={isScrolling ? "white" : "transparent"}
-      className="fixed top-0 z-50 border-0" 
-      placeholder={undefined} 
-      onPointerEnterCapture={undefined} 
-      onPointerLeaveCapture={undefined}    
-      >
+      className="fixed top-0 z-50 border-0"
+      placeholder={undefined}
+      onPointerEnterCapture={undefined}
+      onPointerLeaveCapture={undefined}
+    >
       <div className="container mx-auto flex items-center justify-between">
         <Typography
           as="a"
           href=""
           target="_blank"
           variant="h3"
-          color={isScrolling ? "gray" : "white"} 
-          placeholder={undefined} 
-          onPointerEnterCapture={undefined} 
-          onPointerLeaveCapture={undefined}        
-          >
+          color={isScrolling ? "gray" : "white"}
+          placeholder={undefined}
+          onPointerEnterCapture={undefined}
+          onPointerLeaveCapture={undefined}
+        >
           Laser Inova
         </Typography>
         <ul
@@ -89,63 +91,64 @@ export function Navbar() {
         >
           <NavItem>Home</NavItem>
           {/* <NavItem>Nosotros</NavItem> */}
-         <NavItem>
-         <a target="blank" href="https://api.whatsapp.com/send?phone=+525512431147&text=Hola!">
-          Contactanos
-          </a>
+          <NavItem>
+            <a
+              target="blank"
+              href="https://api.whatsapp.com/send?phone=+525512431147&text=Hola!"
+            >
+              Contactanos
+            </a>
           </NavItem>
         </ul>
         <div className="hidden gap-2 lg:flex lg:items-center">
-        <a target="blank" href="mailto:informes@laserinova.com">
+          <a target="blank" href="mailto:informes@laserinova.com">
             <IconButton
               variant="text"
               color={isScrolling ? "gray" : "white"}
-              size="sm" 
-              placeholder={undefined} 
-              onPointerEnterCapture={undefined} 
+              size="sm"
+              placeholder={undefined}
+              onPointerEnterCapture={undefined}
               onPointerLeaveCapture={undefined}
-              >
+            >
               <i className="fa-solid fa-envelope text-base" />
             </IconButton>
           </a>
-          <a target="blank"  href="https://www.facebook.com/profile.php?id=100093617932950">
+          <a
+            target="blank"
+            href="https://www.facebook.com/profile.php?id=100093617932950"
+          >
             <IconButton
               variant="text"
               color={isScrolling ? "gray" : "white"}
-              size="sm" 
-              placeholder={undefined} 
-              onPointerEnterCapture={undefined} 
-              onPointerLeaveCapture={undefined}            >
+              size="sm"
+              placeholder={undefined}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}
+            >
               <i className="fa-brands fa-facebook text-base" />
             </IconButton>
           </a>
           <a target="blank" href="https://www.instagram.com/laserinova23/">
-          <IconButton
-            variant="text"
-            color={isScrolling ? "gray" : "white"}
-            size="sm"
-            placeholder={undefined} 
-            onPointerEnterCapture={undefined} 
-            onPointerLeaveCapture={undefined}   
-          >
-            <i className="fa-brands fa-instagram text-base" />
-
-          </IconButton>
+            <IconButton
+              variant="text"
+              color={isScrolling ? "gray" : "white"}
+              size="sm"
+              placeholder={undefined}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}
+            >
+              <i className="fa-brands fa-instagram text-base" />
+            </IconButton>
           </a>
-          {/* <a href="https://www.material-tailwind.com/blocks" target="_blank">
-            <Button color={isScrolling ? "gray" : "white"} size="sm">
-              Blocks
-            </Button>
-          </a> */}
         </div>
         <IconButton
           variant="text"
           color={isScrolling ? "gray" : "white"}
           onClick={handleOpen}
           className="ml-auto inline-block lg:hidden"
-          placeholder={undefined} 
-          onPointerEnterCapture={undefined} 
-          onPointerLeaveCapture={undefined}   
+          placeholder={undefined}
+          onPointerEnterCapture={undefined}
+          onPointerLeaveCapture={undefined}
         >
           {open ? (
             <XMarkIcon strokeWidth={2} className="h-6 w-6" />
@@ -159,45 +162,52 @@ export function Navbar() {
           <ul className="flex flex-col gap-4 text-blue-gray-900">
             <NavItem>Home</NavItem>
             {/* <NavItem>Nosotros</NavItem> */}
-           <NavItem>
-              <a target="blank" href="https://api.whatsapp.com/send?phone=+525512431147&text=Hola!">Contactanos </a>
-           </NavItem>
-            
+            <NavItem>
+              <a
+                target="blank"
+                href="https://api.whatsapp.com/send?phone=+525512431147&text=Hola!"
+              >
+                Contactanos{" "}
+              </a>
+            </NavItem>
           </ul>
           <div className="mt-4 flex items-center gap-2">
-          <a target="blank" href="mailto:informes@laserinova.com">
-              <IconButton 
-                variant="text" 
-                color="gray" 
+            <a target="blank" href="mailto:informes@laserinova.com">
+              <IconButton
+                variant="text"
+                color="gray"
                 size="sm"
-                placeholder={undefined} 
-                onPointerEnterCapture={undefined} 
-                onPointerLeaveCapture={undefined}   
-                >
+                placeholder={undefined}
+                onPointerEnterCapture={undefined}
+                onPointerLeaveCapture={undefined}
+              >
                 <i className="fa-solid fa-envelope text-base" />
               </IconButton>
             </a>
-            <a target="blank"  href="https://www.facebook.com/profile.php?id=100093617932950">
-              <IconButton 
-                variant="text" 
-                color="gray" 
+            <a
+              target="blank"
+              href="https://www.facebook.com/profile.php?id=100093617932950"
+            >
+              <IconButton
+                variant="text"
+                color="gray"
                 size="sm"
-                placeholder={undefined} 
-                onPointerEnterCapture={undefined} 
-                onPointerLeaveCapture={undefined}   
-                >
+                placeholder={undefined}
+                onPointerEnterCapture={undefined}
+                onPointerLeaveCapture={undefined}
+              >
                 <i className="fa-brands fa-facebook text-base" />
               </IconButton>
             </a>
             <a target="blank" href="https://www.instagram.com/laserinova23/">
-              <IconButton 
-                variant="text" 
-                color="gray" 
+              <IconButton
+                variant="text"
+                color="gray"
                 size="sm"
-                placeholder={undefined} 
-                onPointerEnterCapture={undefined} 
-                onPointerLeaveCapture={undefined}   
-                >
+                placeholder={undefined}
+                onPointerEnterCapture={undefined}
+                onPointerLeaveCapture={undefined}
+              >
                 <i className="fa-brands fa-instagram text-base" />
               </IconButton>
             </a>
