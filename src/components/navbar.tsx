@@ -96,13 +96,18 @@ export function Navbar() {
           </NavItem>
         </ul>
         <div className="hidden gap-2 lg:flex lg:items-center">
-          {/* <IconButton
-            variant="text"
-            color={isScrolling ? "gray" : "white"}
-            size="sm"
-          >
-            <i className="fa-brands fa-twitter text-base" />
-          </IconButton> */}
+        <a target="blank" href="mailto:informes@laserinova.com">
+            <IconButton
+              variant="text"
+              color={isScrolling ? "gray" : "white"}
+              size="sm" 
+              placeholder={undefined} 
+              onPointerEnterCapture={undefined} 
+              onPointerLeaveCapture={undefined}
+              >
+              <i className="fa-solid fa-envelope text-base" />
+            </IconButton>
+          </a>
           <a target="blank"  href="https://www.facebook.com/profile.php?id=100093617932950">
             <IconButton
               variant="text"
@@ -160,6 +165,18 @@ export function Navbar() {
             
           </ul>
           <div className="mt-4 flex items-center gap-2">
+          <a target="blank" href="mailto:informes@laserinova.com">
+              <IconButton 
+                variant="text" 
+                color="gray" 
+                size="sm"
+                placeholder={undefined} 
+                onPointerEnterCapture={undefined} 
+                onPointerLeaveCapture={undefined}   
+                >
+                <i className="fa-solid fa-envelope text-base" />
+              </IconButton>
+            </a>
             <a target="blank"  href="https://www.facebook.com/profile.php?id=100093617932950">
               <IconButton 
                 variant="text" 
