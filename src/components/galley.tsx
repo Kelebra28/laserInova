@@ -16,7 +16,7 @@ const CarouselDefault = ({ data }: { data: CarruselItem[] }) => {
           onPointerEnterCapture={undefined}
           onPointerLeaveCapture={undefined}
         >
-          {data && data.map((item) => <img src={item.url} alt={item.alt} className={item.class} />)}
+          {data && data.map((item, key) => <img key={key} src={item.url} alt={item.alt} className={item.class} />)}
         </Carousel>
       </div>
     </div>
