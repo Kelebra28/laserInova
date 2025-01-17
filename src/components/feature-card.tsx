@@ -15,7 +15,7 @@ import {
     return (
       <Card color="transparent" shadow={false} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
         <CardBody className="grid justify-start"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-          <div className="mb-4 grid h-12 w-12 place-content-center rounded-lg bg-blue-700 p-2.5 text-left text-white">
+          <div className="mb-4 grid h-12 w-12 place-content-center rounded-lg bg-red-700 p-2.5 text-left text-white">
             <Icon className="h-6 w-6" />
           </div>
           <Typography variant="h5" className="mb-2 text-gray-400" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
