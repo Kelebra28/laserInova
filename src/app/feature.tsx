@@ -41,7 +41,7 @@ const FEATURES = [
 
 export function Features() {
   return (
-    <section className="py-28 px-4 bg-black">
+    <section className="py-28 px-4 bg-black mt-8">
       <div className="container mx-auto mb-20 text-center">
         <Typography className="mb-2 font-bold uppercase !text-gray-200 " placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             Tu Taller de Corte Láser

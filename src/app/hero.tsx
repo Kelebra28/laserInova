@@ -29,14 +29,14 @@ function Hero() {
           />
         </div>
       </header>
-      <div className="mx-8 mb-12 lg:mx-16 -mt-24 rounded-xl bg-blue-700 p-5 md:p-14 shadow-md">
+      <div className="mx-8 mb-12 lg:mx-16 -mt-24 rounded-xl bg-red-400 p-5 md:p-14 shadow-md">
         <div>
           <Typography variant="h3" color="white" className="mb-3" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           Solicita Tu Proyecto
           </Typography>
           <Typography
             variant="paragraph"
-            className="font-normal !text-blue-100 lg:w-5/12" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          >
+            className="font-normal !text-gray-100 lg:w-5/12" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          >
             Explora nuestro catálogo de servicios y recursos para corte y grabado láser. Ofrecemos soluciones personalizadas para una amplia gama de proyectos, desde diseño creativo hasta fabricación y decoración.
           </Typography>
         </div>
