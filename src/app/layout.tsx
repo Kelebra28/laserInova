@@ -10,7 +10,7 @@ const roboto = Roboto({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://www.dkglassvelasco.com"),
+  metadataBase: new URL("https://www.laserinova.com/"),
   title: "Laser Inova",
   description:
     "Estamos emocionados de ofrecerte nuestros servicios de corte y grabado láser. Nos especializamos en transformar tus ideas en realidad con atención al detalle y tecnología de vanguardia. Ofrecemos una variedad de servicios que incluyen corte personalizado, grabado láser y soluciones creativas para todo tipo de proyectos. Contáctanos para discutir cómo podemos ayudarte a dar vida a tus ideas.",
