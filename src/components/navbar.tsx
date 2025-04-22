@@ -1,10 +1,11 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import {
   Navbar as MTNavbar,
   Collapse,
   IconButton,
   Typography,
-  Button,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
@@ -12,6 +13,7 @@ interface NavItemProps {
   children: React.ReactNode;
   href?: string;
 }
+
 function NavItem({ children, href }: NavItemProps) {
   return (
     <li>
@@ -19,6 +21,7 @@ function NavItem({ children, href }: NavItemProps) {
         as="a"
         href={href || "#"}
         target={href ? "_blank" : "_self"}
+        rel="noopener noreferrer"
         variant="small"
         className="font-medium"
         placeholder={undefined}
@@ -32,33 +35,33 @@ function NavItem({ children, href }: NavItemProps) {
 }
 
 export function Navbar() {
-  const [open, setOpen] = React.useState(false);
-  const [isScrolling, setIsScrolling] = React.useState(false);
+  const [open, setOpen] = useState(false);
+  const [isScrolling, setIsScrolling] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
-  function handleOpen() {
-    setOpen((cur) => !cur);
-  }
+  useEffect(() => {
+    setMounted(true);
+    
+    const handleResize = () => {
+      if (window.innerWidth >= 960) setOpen(false);
+    };
+    
+    const handleScroll = () => {
+      setIsScrolling(window.scrollY > 0);
+    };
 
-  React.useEffect(() => {
-    window.addEventListener(
-      "resize",
-      () => window.innerWidth >= 960 && setOpen(false)
-    );
-  }, []);
-
-  React.useEffect(() => {
-    function handleScroll() {
-      if (window.scrollY > 0) {
-        setIsScrolling(true);
-      } else {
-        setIsScrolling(false);
-      }
-    }
-
+    window.addEventListener("resize", handleResize);
     window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
+
+  const handleOpen = () => setOpen(cur => !cur);
+
+  if (!mounted) return null;
 
   return (
     <MTNavbar
@@ -74,8 +77,7 @@ export function Navbar() {
       <div className="container mx-auto flex items-center justify-between">
         <Typography
           as="a"
-          href=""
-          target="_blank"
+          href="/"
           variant="h3"
           color={isScrolling ? "gray" : "white"}
           placeholder={undefined}
@@ -84,24 +86,24 @@ export function Navbar() {
         >
           Laser Inova
         </Typography>
-        <ul
-          className={`ml-10 hidden items-center gap-6 lg:flex ${
-            isScrolling ? "text-gray-900" : "text-white"
-          }`}
-        >
+        
+        <ul className={`ml-10 hidden items-center gap-6 lg:flex ${
+          isScrolling ? "text-gray-900" : "text-white"
+        }`}>
           <NavItem>Home</NavItem>
-          {/* <NavItem>Nosotros</NavItem> */}
           <NavItem>
             <a
-              target="blank"
+              target="_blank"
+              rel="noopener noreferrer"
               href="https://api.whatsapp.com/send?phone=+525591970628&text=Hola!"
             >
-              Contactanos
+              Contáctanos
             </a>
           </NavItem>
         </ul>
+
         <div className="hidden gap-2 lg:flex lg:items-center">
-          <a target="blank" href="mailto:informes@laserinova.com">
+          <a target="_blank" rel="noopener noreferrer" href="mailto:informes@laserinova.com">
             <IconButton
               variant="text"
               color={isScrolling ? "gray" : "white"}
@@ -114,7 +116,8 @@ export function Navbar() {
             </IconButton>
           </a>
           <a
-            target="blank"
+            target="_blank"
+            rel="noopener noreferrer"
             href="https://www.facebook.com/profile.php?id=100093617932950"
           >
             <IconButton
@@ -128,7 +131,7 @@ export function Navbar() {
               <i className="fa-brands fa-facebook text-base" />
             </IconButton>
           </a>
-          <a target="blank" href="https://www.instagram.com/laserinova23/">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/laserinova23/">
             <IconButton
               variant="text"
               color={isScrolling ? "gray" : "white"}
@@ -141,6 +144,7 @@ export function Navbar() {
             </IconButton>
           </a>
         </div>
+
         <IconButton
           variant="text"
           color={isScrolling ? "gray" : "white"}
@@ -157,22 +161,23 @@ export function Navbar() {
           )}
         </IconButton>
       </div>
+
       <Collapse open={open}>
         <div className="container mx-auto mt-4 rounded-lg border-t border-blue-gray-50 bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-blue-gray-900">
             <NavItem>Home</NavItem>
-            {/* <NavItem>Nosotros</NavItem> */}
             <NavItem>
               <a
-                target="blank"
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://api.whatsapp.com/send?phone=+525591970628&text=Hola!"
               >
-                Contactanos{" "}
+                Contáctanos
               </a>
             </NavItem>
           </ul>
           <div className="mt-4 flex items-center gap-2">
-            <a target="blank" href="mailto:informes@laserinova.com">
+            <a target="_blank" rel="noopener noreferrer" href="mailto:informes@laserinova.com">
               <IconButton
                 variant="text"
                 color="gray"
@@ -185,7 +190,8 @@ export function Navbar() {
               </IconButton>
             </a>
             <a
-              target="blank"
+              target="_blank"
+              rel="noopener noreferrer"
               href="https://www.facebook.com/profile.php?id=100093617932950"
             >
               <IconButton
@@ -199,7 +205,7 @@ export function Navbar() {
                 <i className="fa-brands fa-facebook text-base" />
               </IconButton>
             </a>
-            <a target="blank" href="https://www.instagram.com/laserinova23/">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/laserinova23/">
               <IconButton
                 variant="text"
                 color="gray"
