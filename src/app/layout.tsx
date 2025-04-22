@@ -11,9 +11,9 @@ const roboto = Roboto({
 
 export const metadata = {
   metadataBase: new URL("https://www.laserinova.com/"),
-  title: "Laser Inova",
+  title: "Corte y Grabado Láser en CDMX | Personaliza Madera, Metal y Espejos",
   description:
-    "Estamos emocionados de ofrecerte nuestros servicios de corte y grabado láser. Nos especializamos en transformar tus ideas en realidad con atención al detalle y tecnología de vanguardia. Ofrecemos una variedad de servicios que incluyen corte personalizado, grabado láser y soluciones creativas para todo tipo de proyectos. Contáctanos para discutir cómo podemos ayudarte a dar vida a tus ideas.",
+  "Taller profesional en CDMX: Cortes láser en madera, metal, acrílico y grabados en espejos, vidrio y más. Personaliza regalos, letreros o decoración con tecnología de precisión. ¡Cotiza en línea hoy mismo!",
   // image: "/favicon.png",
   // icons: {
   //   icon: '',
@@ -21,28 +21,27 @@ export const metadata = {
   generator: "Next.js",
   applicationName: "Laser Inova",
   referrer: "origin-when-cross-origin",
+  "@type": "LocalBusiness",
+  "service": ["Corte láser", "Grabado personalizado"],
   keywords: [
-    "Taller de corte y grabado láser",
-    "Glass services",
-    "Corte láser en madera",
-    "Grabado láser en metal",
-    "Productos personalizados",
-    "Decoración personalizada",
-    "Regalos personalizados",
-    "Prototipado rápido",
-    "Servicios de grabado láser",
-    "Corte láser para empresas",
-    "Grabado en madera y metal",
-    "Letreros personalizados",
-    "Diseños personalizados con láser",
-    "Corte y grabado láser de precisión",
-    "Artesanías con corte láser",
-    "Joyería personalizada con láser",
-    "Grabado láser de alta calidad",
-    "Corte láser para decoración",
-    "Personalización de productos",
-    "Grabado láser para regalos",
-    "Corte láser para prototipos",
+    // Servicios + materiales (agrega "espejos"):
+    "Corte láser en madera, metal y acrílico",
+    "Grabado láser en espejos, vidrio y metal",
+    "Prototipado rápido con láser",
+    "Letreros personalizados para negocios",
+    "Decoración para bodas con grabado láser",
+    "Regalos originales grabados en espejos",
+    "Joyería artesanal con láser",
+  
+    // SEO local:
+    "Taller de corte láser en CDMX",
+    "Grabado en espejos en Azcapotzalco",
+    "Servicio de láser cerca de mí",
+  
+    // Palabras long-tail:
+    "Precio de grabado láser en espejos",
+    "Cómo personalizar un espejo con láser",
+    "Dónde hacer cortes láser en CDMX",
   ],
   authors: [
     { name: "Ricardo Basurto" },
@@ -72,6 +71,29 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+      <script type="application/ld+json">
+  {JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Laser Innova",
+    // "image": "https://www.laserinova.com/og-laser-inova.jpg",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Azcapotzalco",
+      "addressLocality": "CDMX",
+      "addressRegion": "Ciudad de México",
+      "postalCode": "02480",
+    },
+    "service": [
+      "Corte láser en madera",
+      "Grabado láser en espejos",
+      "Personalización de regalos",
+    ],
+    // "telephone": "+52-55-XXXX-XXXX",
+    "url": "https://www.laserinova.com/"
+  })}
+</script>
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
