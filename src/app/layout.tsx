@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import { FixedPlugin, Layout } from "@/components";
+import SchemaMarkup from "@/components/SchemaMarkup";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -71,29 +72,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <script type="application/ld+json">
-  {JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Laser Innova",
-    // "image": "https://www.laserinova.com/og-laser-inova.jpg",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Azcapotzalco",
-      "addressLocality": "CDMX",
-      "addressRegion": "Ciudad de México",
-      "postalCode": "02480",
-    },
-    "service": [
-      "Corte láser en madera",
-      "Grabado láser en espejos",
-      "Personalización de regalos",
-    ],
-    // "telephone": "+52-55-XXXX-XXXX",
-    "url": "https://www.laserinova.com/"
-  })}
-</script>
+        <SchemaMarkup />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
