@@ -4,7 +4,7 @@ import { Button } from "@material-tailwind/react";
 
 export function FixedPlugin() {
   return (
-    <a href="https://api.whatsapp.com/send?phone=+525512431147&text=Hola!" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=+525591970628&text=Hola!" target="_blank">
       <Button
         color="green"
         size="sm"

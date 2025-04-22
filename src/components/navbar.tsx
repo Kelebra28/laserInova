@@ -94,7 +94,7 @@ export function Navbar() {
           <NavItem>
             <a
               target="blank"
-              href="https://api.whatsapp.com/send?phone=+525512431147&text=Hola!"
+              href="https://api.whatsapp.com/send?phone=+525591970628&text=Hola!"
             >
               Contactanos
             </a>
@@ -165,7 +165,7 @@ export function Navbar() {
             <NavItem>
               <a
                 target="blank"
-                href="https://api.whatsapp.com/send?phone=+525512431147&text=Hola!"
+                href="https://api.whatsapp.com/send?phone=+525591970628&text=Hola!"
               >
                 Contactanos{" "}
               </a>
