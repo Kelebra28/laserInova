@@ -41,11 +41,11 @@ export function Navbar() {
 
   useEffect(() => {
     setMounted(true);
-    
+
     const handleResize = () => {
       if (window.innerWidth >= 960) setOpen(false);
     };
-    
+
     const handleScroll = () => {
       setIsScrolling(window.scrollY > 0);
     };
@@ -59,7 +59,7 @@ export function Navbar() {
     };
   }, []);
 
-  const handleOpen = () => setOpen(cur => !cur);
+  const handleOpen = () => setOpen((cur) => !cur);
 
   if (!mounted) return null;
 
@@ -86,10 +86,12 @@ export function Navbar() {
         >
           Laser Inova
         </Typography>
-        
-        <ul className={`ml-10 hidden items-center gap-6 lg:flex ${
-          isScrolling ? "text-gray-900" : "text-white"
-        }`}>
+
+        <ul
+          className={`ml-10 hidden items-center gap-6 lg:flex ${
+            isScrolling ? "text-gray-900" : "text-white"
+          }`}
+        >
           <NavItem>Home</NavItem>
           <NavItem>
             <a
@@ -103,8 +105,13 @@ export function Navbar() {
         </ul>
 
         <div className="hidden gap-2 lg:flex lg:items-center">
-          <a target="_blank" rel="noopener noreferrer" href="mailto:informes@laserinova.com">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="mailto:informes@laserinova.com"
+          >
             <IconButton
+              name="email"
               variant="text"
               color={isScrolling ? "gray" : "white"}
               size="sm"
@@ -121,6 +128,7 @@ export function Navbar() {
             href="https://www.facebook.com/profile.php?id=100093617932950"
           >
             <IconButton
+              name="facebook"
               variant="text"
               color={isScrolling ? "gray" : "white"}
               size="sm"
@@ -131,7 +139,11 @@ export function Navbar() {
               <i className="fa-brands fa-facebook text-base" />
             </IconButton>
           </a>
-          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/laserinova23/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.instagram.com/laserinova23/"
+          >
             <IconButton
               variant="text"
               color={isScrolling ? "gray" : "white"}
@@ -146,6 +158,7 @@ export function Navbar() {
         </div>
 
         <IconButton
+          name="nav"
           variant="text"
           color={isScrolling ? "gray" : "white"}
           onClick={handleOpen}
@@ -177,8 +190,13 @@ export function Navbar() {
             </NavItem>
           </ul>
           <div className="mt-4 flex items-center gap-2">
-            <a target="_blank" rel="noopener noreferrer" href="mailto:informes@laserinova.com">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="mailto:informes@laserinova.com"
+            >
               <IconButton
+                name="email"
                 variant="text"
                 color="gray"
                 size="sm"
@@ -195,6 +213,7 @@ export function Navbar() {
               href="https://www.facebook.com/profile.php?id=100093617932950"
             >
               <IconButton
+                name="facebook"
                 variant="text"
                 color="gray"
                 size="sm"
@@ -205,8 +224,13 @@ export function Navbar() {
                 <i className="fa-brands fa-facebook text-base" />
               </IconButton>
             </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/laserinova23/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/laserinova23/"
+            >
               <IconButton
+                name='intagram'
                 variant="text"
                 color="gray"
                 size="sm"

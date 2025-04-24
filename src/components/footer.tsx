@@ -10,8 +10,7 @@ export function Footer() {
         <div className="flex flex-wrap justify-center gap-8 md:justify-between">
           <div className="text-center md:text-left">
             <Typography
-              as="a"
-              href="https://www.material-tailwind.com"
+              as="p"
               target="_blank"
               variant="h5"
               color="white"
@@ -27,17 +26,17 @@ export function Footer() {
             <ul className="flex flex-wrap items-center justify-center md:justify-start">
               <div className="flex gap-2">
               <a target="blank" href="mailto:informes@laserinova.com">
-                  <IconButton variant="text" color="white" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                  <IconButton name="email" variant="text" color="white" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                     <i className="fa-solid fa-envelope text-2xl not-italic opacity-75"></i>
                   </IconButton>
                 </a>
                 <a target="blank" href="https://www.facebook.com/profile.php?id=100093617932950">
-                  <IconButton variant="text" color="white" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                  <IconButton name="facebook" variant="text" color="white" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                     <i className="fa-brands fa-facebook text-2xl not-italic opacity-75"></i>
                   </IconButton>
                 </a>
                 <a target="blank" href="https://www.instagram.com/laserinova23/">
-                  <IconButton variant="text" color="white" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                  <IconButton name="instagram" variant="text" color="white" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                     <i className="fa-brands fa-instagram text-2xl not-italic opacity-75"></i>
                   </IconButton>
                 </a>
