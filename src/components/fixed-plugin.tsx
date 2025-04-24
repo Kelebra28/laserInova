@@ -7,6 +7,7 @@ export function FixedPlugin() {
     <a href="https://api.whatsapp.com/send?phone=+525591970628&text=Hola!" target="_blank">
       <Button
         color="green"
+        name="Contact"
         size="sm"
         className="!fixed bottom-4  right-4 flex gap-1 pl-2 items-center border border-blue-gray-50" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}      >
          <i className="fa-brands fa-whatsapp text-base" />
